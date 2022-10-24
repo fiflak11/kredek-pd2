@@ -25,6 +25,6 @@ div.num{
         transform: translate(0,-100px);
     }
     to{
-        transform: translate(0,900px);
+        transform: translate(0,1000px);
     }
 }
