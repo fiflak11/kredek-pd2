@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --width-block: 30vw;
+    --height-block: 10vh;
+    --margin-block: 10px;
+}
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main>div{
+    display: flex;
+    align-items: center;
+    width: var(--width-block);
+    height: var(--height-block);
+    margin: var(--margin-block);
+    transition: 0.5s;
+}
+
+main>div:nth-child(1){
+    background-color: red;
+}
+main>div:nth-child(2){
+    background-color: orangered;
+}
+main>div:nth-child(3){
+    background-color: orange;
+}
+main>div:nth-child(4){
+    background-color: yellow;
+}
+main>div:nth-child(1)>a{
+    color: red;
+}
+main>div:nth-child(2)>a{
+    color: orangered;
+}
+main>div:nth-child(3)>a{
+    color: orange;
+}
+main>div:nth-child(4)>a{
+    color: yellow;
+}
+
+main>div:nth-child(even):hover{
+    transform: translate(100px, 0);
+}
+main>div:nth-child(odd):hover{
+    transform: translate(-100px, 0);
+}
+
+main>div>a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.2s;
+    text-decoration: none;
+}
+main>div>a:hover{
+    color: black;
+}
